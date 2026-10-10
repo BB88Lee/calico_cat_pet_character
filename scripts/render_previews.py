@@ -22,9 +22,12 @@ if atlas.size != (1536,2288):
     raise SystemExit('Expected a 1536x2288 v2 pet atlas.')
 counts = [6,8,8,4,5,8,6,6,6,8,8]
 names = ["idle", "running-right", "running-left", "waving", "jumping", "failed", "waiting", "running", "review", "look-a", "look-b"]
-display_names = ["眨眼与呼吸", "向右小跑", "向左小跑", "头朝下躺地，露肚皮撒娇", "起跳与落地", "趴低扭屁股，蓄力猛扑", "肚子后腿贴柱，把身体往上扽", "认真思考", "五子棋盘背影，轻轻动耳朵"]
+config = json.loads((root / 'pet.json').read_text())
+actions = {action['state']: action for action in config['actions']}
+display_names = [actions[state]['name'] for state in names[:9]]
 font = ImageFont.truetype(args.font, 16)
-durations = [[280,110,110,140,140,320], [120]*7+[220], [120]*7+[220], [180,500,500,200], [140]*4+[280], [650,170,170,170,110,60,120,600], [500,220,260,500,280,600], [120]*5+[220], [650,200,200,300,350,650], [180]*8, [180]*8]
+# Match the desktop player's fixed timing rather than slowing previews separately.
+durations = [[1680,660,660,840,840,1920], [120]*7+[220], [120]*7+[220], [140]*3+[280], [140]*4+[280], [140]*7+[240], [150]*5+[260], [120]*5+[220], [150]*5+[280], [180]*8, [180]*8]
 final_frames = run / "qa/final-frames"
 rows = []
 for row, count in enumerate(counts):
@@ -65,14 +68,15 @@ for row in range(9):
     gif(rows[row],durations[row],folder/f"{names[row]}.gif")
 transition=rows[0]+rows[4]+rows[0]
 gif(transition,durations[0]+durations[4]+durations[0],out / "idle-jump-idle.gif")
+gif(rows[0]+rows[3]+rows[0],durations[0]+durations[3]+durations[0],out / "idle-welcome-idle.gif")
 gif(rows[9]+rows[10],durations[9]+durations[10],out / "look-loop.gif")
-gif(rows[3],durations[3],out / "belly-roll.gif")
-gif(rows[5],durations[5],out / "hunting.gif")
+gif(rows[4],durations[4],out / "belly-roll.gif")
+gif(rows[7],durations[7],out / "hunting.gif")
 gif(rows[6],durations[6],out / "post-scratch.gif")
-for row,name in [(5,'hunting'),(6,'post-scratch')]:
+for row,name in [(7,'hunting'),(6,'post-scratch')]:
     gif([c.resize((384,416),Image.Resampling.LANCZOS) for c in rows[row]],durations[row],out/f'{name}-large.gif')
 gif(rows[8],durations[8],out / "gobang-back.gif")
-labels=[(3,1,"露肚皮"),(5,5,"蓄力猛扑"),(6,3,"贴柱上提"),(8,0,"棋盘背影")]
+labels=[(4,2,"悬停：露肚皮"),(7,3,"工作中：猛扑"),(3,1,"欢迎：起跳"),(5,2,"失败：思考")]
 stills=Image.new("RGB",(768,240),(247,243,234))
 for i,(r,c,l) in enumerate(labels):
     ImageDraw.Draw(stills).text((i*192+6,4),l,fill=(65,52,44),font=font)

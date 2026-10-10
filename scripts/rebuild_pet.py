@@ -6,6 +6,9 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+from statistics import median
+
+from PIL import Image
 
 
 def main():
@@ -47,6 +50,30 @@ def main():
     bundled('make_contact_sheet.py', atlas, '--output', qa / 'contact-sheet-extended.png', '--scale', '1')
     bundled('make_direction_qa_sheet.py', atlas, '--output', qa / 'directions.png')
     bundled('measure_direction_continuity.py', atlas, '--json-out', qa / 'look-continuity.json')
+    config = json.loads((root / 'pet.json').read_text())
+    actions = config['actions']
+    if actions[4].get('motion_family') == 'belly-roll':
+        # The user explicitly moved the jump artwork to the welcome slot.
+        # Check real jump geometry there; the hover slot now stays on the ground.
+        image = Image.open(atlas).convert('RGBA')
+        def baseline(row, column):
+            cell = image.crop((column * 192, row * 208, (column + 1) * 192, (row + 1) * 208))
+            return cell.getchannel('A').getbbox()[3]
+        idle_baseline = round(median(baseline(0, i) for i in range(6)))
+        welcome_baselines = [baseline(3, i) for i in range(4)]
+        lift = max(welcome_baselines) - min(welcome_baselines)
+        landing = abs(welcome_baselines[-1] - idle_baseline)
+        mapping_review = {
+            'ok': lift >= 8 and landing <= 12,
+            'user_requested_mapping': {action['state']: action['name'] for action in actions},
+            'welcome_jump': {'row': 3, 'baselines': welcome_baselines,
+                             'airborne_lift_pixels': lift, 'landing_delta_pixels': landing},
+            'hover_row_override': 'row 4 intentionally contains grounded belly-roll artwork',
+            'quality_gate_note': 'default geometry checks retained; actual jump semantics verified in row 3',
+        }
+        (qa / 'custom-action-mapping.json').write_text(json.dumps(mapping_review, ensure_ascii=False, indent=2))
+        if not mapping_review['ok']:
+            raise SystemExit('Remapped welcome jump failed lift or landing checks')
     bundled('validate_pet_quality.py', atlas, '--atlas-validation', qa / 'validation.json',
             '--chroma-report', qa / 'chroma-despill.json', '--frame-review', qa / 'review.json',
             '--direction-semantics', root / 'qa/direction-semantics.json',

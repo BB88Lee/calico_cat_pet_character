@@ -1,19 +1,19 @@
 {
   "ok": true,
-  "atlas": "creation-run/final/spritesheet-extended.png",
-  "encoded_bytes": 2670852,
-  "sha256": "60e94b9b6c8412e5f0b24a7d94feed228ed19de62041a7a7f34fee490ca562a6",
+  "atlas": "/Users/jinke/Documents/Codex/2026-10-09/pets-plugin-work-pets-openai-curated/outputs/zhuobielin-pet.png",
+  "encoded_bytes": 2590623,
+  "sha256": "d27e2a38cd05f36d88faafa879cd0cccf6947f35edca1e54f16f0a07f1de9e65",
   "jump": {
     "idle_baseline": 198,
     "jump_baselines": [
-      196,
-      192,
-      137,
-      181,
-      198
+      195,
+      203,
+      203,
+      203,
+      197
     ],
-    "airborne_lift_pixels": 61,
-    "landing_delta_pixels": 0
+    "airborne_lift_pixels": 8,
+    "landing_delta_pixels": 1
   },
   "look_registration": {
     "neutral_center_x": 95.5,

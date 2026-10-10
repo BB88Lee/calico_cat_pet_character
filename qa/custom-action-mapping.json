@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "user_requested_mapping": {
+    "idle": "眨眼与呼吸",
+    "running-right": "向右小跑",
+    "running-left": "向左小跑",
+    "waving": "起跳与落地",
+    "jumping": "头朝下躺地，露肚皮撒娇",
+    "failed": "认真思考",
+    "waiting": "肚子后腿贴柱，把身体往上扽",
+    "running": "趴低扭屁股，蓄力猛扑",
+    "review": "五子棋盘背影，轻轻动耳朵"
+  },
+  "welcome_jump": {
+    "row": 3,
+    "baselines": [
+      198,
+      139,
+      184,
+      199
+    ],
+    "airborne_lift_pixels": 60,
+    "landing_delta_pixels": 1
+  },
+  "hover_row_override": "row 4 intentionally contains grounded belly-roll artwork",
+  "unchanged_rows_pixel_identical": true,
+  "all_remapped_cells_identical_to_selected_original_cells": true,
+  "quality_gate_note": "default geometry checks retained; actual jump semantics verified in row 3"
+}

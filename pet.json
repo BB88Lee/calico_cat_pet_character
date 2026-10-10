@@ -40,7 +40,8 @@
         4,
         5
       ],
-      "custom_semantics": false
+      "custom_semantics": false,
+      "trigger": "空闲待机"
     },
     {
       "state": "running-right",
@@ -56,7 +57,8 @@
         6,
         7
       ],
-      "custom_semantics": false
+      "custom_semantics": false,
+      "trigger": "向右拖动"
     },
     {
       "state": "running-left",
@@ -72,36 +74,56 @@
         6,
         7
       ],
-      "custom_semantics": false
+      "custom_semantics": false,
+      "trigger": "向左拖动"
     },
     {
       "state": "waving",
-      "name": "头朝下躺地，露肚皮撒娇",
+      "name": "起跳与落地",
       "frames": 4,
       "source_indices": [
-        2,
-        3,
-        4,
-        5
-      ],
-      "custom_semantics": true
-    },
-    {
-      "state": "jumping",
-      "name": "起跳与落地",
-      "frames": 5,
-      "source_indices": [
         0,
-        1,
         2,
         3,
         4
       ],
-      "custom_semantics": false
+      "custom_semantics": true,
+      "trigger": "首次启用时的欢迎提示",
+      "motion_family": "vertical-jump",
+      "remapped_from_state": "jumping",
+      "remapped_original_frame_indices": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "state": "jumping",
+      "name": "头朝下躺地，露肚皮撒娇",
+      "frames": 5,
+      "source_indices": [
+        2,
+        3,
+        4,
+        3,
+        5
+      ],
+      "custom_semantics": true,
+      "trigger": "鼠标移到猫身上",
+      "motion_family": "belly-roll",
+      "remapped_from_state": "waving",
+      "remapped_original_frame_indices": [
+        0,
+        1,
+        2,
+        1,
+        3
+      ]
     },
     {
       "state": "failed",
-      "name": "趴低扭屁股，蓄力猛扑",
+      "name": "认真思考",
       "frames": 8,
       "source_indices": [
         0,
@@ -110,10 +132,23 @@
         3,
         4,
         5,
-        6,
-        7
+        4,
+        0
       ],
-      "custom_semantics": true
+      "custom_semantics": true,
+      "trigger": "工作失败或遇到错误",
+      "motion_family": "thinking",
+      "remapped_from_state": "running",
+      "remapped_original_frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        4,
+        0
+      ]
     },
     {
       "state": "waiting",
@@ -127,21 +162,33 @@
         4,
         5
       ],
-      "custom_semantics": true
+      "custom_semantics": true,
+      "trigger": "需要回答或批准"
     },
     {
       "state": "running",
-      "name": "认真思考",
+      "name": "趴低扭屁股，蓄力猛扑",
       "frames": 6,
       "source_indices": [
         0,
-        1,
         2,
         3,
-        4,
-        5
+        5,
+        6,
+        7
       ],
-      "custom_semantics": false
+      "custom_semantics": true,
+      "trigger": "聊天正在工作",
+      "motion_family": "hunting",
+      "remapped_from_state": "failed",
+      "remapped_original_frame_indices": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7
+      ]
     },
     {
       "state": "review",
@@ -155,7 +202,8 @@
         4,
         5
       ],
-      "custom_semantics": true
+      "custom_semantics": true,
+      "trigger": "工作完成且有未读结果"
     }
   ],
   "look_directions": [
@@ -177,5 +225,7 @@
     "337.5"
   ],
   "final_file": "outputs/zhuobielin-pet.png",
-  "sha256": "60e94b9b6c8412e5f0b24a7d94feed228ed19de62041a7a7f34fee490ca562a6"
+  "sha256": "d27e2a38cd05f36d88faafa879cd0cccf6947f35edca1e54f16f0a07f1de9e65",
+  "mapping_revision": "2026-10-10",
+  "runtime_mapping_note": "触发规则由桌面端控制；图像行重新编排为用户指定动作。欢迎起跳，悬停露肚皮，工作中捕猎，失败时思考。"
 }

@@ -93,14 +93,21 @@
         "source/frames/waving/03.png"
       ],
       "method": "components",
-      "user_action": "头朝下躺地，露肚皮撒娇",
+      "user_action": "起跳与落地",
       "source_indices": [
+        0,
         2,
         3,
-        4,
-        5
+        4
       ],
-      "user_semantics_override": true
+      "user_semantics_override": true,
+      "remapped_from_state": "jumping",
+      "remapped_original_frame_indices": [
+        0,
+        2,
+        3,
+        4
+      ]
     },
     {
       "state": "jumping",
@@ -112,15 +119,23 @@
         "source/frames/jumping/04.png"
       ],
       "method": "components",
-      "user_action": "起跳与落地",
+      "user_action": "头朝下躺地，露肚皮撒娇",
       "source_indices": [
+        2,
+        3,
+        4,
+        3,
+        5
+      ],
+      "user_semantics_override": true,
+      "remapped_from_state": "waving",
+      "remapped_original_frame_indices": [
         0,
         1,
         2,
-        3,
-        4
-      ],
-      "user_semantics_override": false
+        1,
+        3
+      ]
     },
     {
       "state": "failed",
@@ -135,7 +150,7 @@
         "source/frames/failed/07.png"
       ],
       "method": "components",
-      "user_action": "趴低扭屁股，蓄力猛扑",
+      "user_action": "认真思考",
       "source_indices": [
         0,
         1,
@@ -143,10 +158,21 @@
         3,
         4,
         5,
-        6,
-        7
+        4,
+        0
       ],
-      "user_semantics_override": true
+      "user_semantics_override": true,
+      "remapped_from_state": "running",
+      "remapped_original_frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        4,
+        0
+      ]
     },
     {
       "state": "waiting",
@@ -181,16 +207,25 @@
         "source/frames/running/05.png"
       ],
       "method": "components",
-      "user_action": "认真思考",
+      "user_action": "趴低扭屁股，蓄力猛扑",
       "source_indices": [
         0,
-        1,
         2,
         3,
-        4,
-        5
+        5,
+        6,
+        7
       ],
-      "user_semantics_override": false
+      "user_semantics_override": true,
+      "remapped_from_state": "failed",
+      "remapped_original_frame_indices": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        7
+      ]
     },
     {
       "state": "review",
