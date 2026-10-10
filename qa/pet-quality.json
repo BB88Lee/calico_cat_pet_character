@@ -1,0 +1,72 @@
+{
+  "ok": true,
+  "atlas": "creation-run/final/spritesheet-extended.png",
+  "encoded_bytes": 2670852,
+  "sha256": "60e94b9b6c8412e5f0b24a7d94feed228ed19de62041a7a7f34fee490ca562a6",
+  "jump": {
+    "idle_baseline": 198,
+    "jump_baselines": [
+      196,
+      192,
+      137,
+      181,
+      198
+    ],
+    "airborne_lift_pixels": 61,
+    "landing_delta_pixels": 0
+  },
+  "look_registration": {
+    "neutral_center_x": 95.5,
+    "look_centers_x": [
+      96.5,
+      97.0,
+      96.5,
+      97.0,
+      96.0,
+      96.0,
+      95.5,
+      95.0,
+      95.0,
+      92.0,
+      96.0,
+      96.0,
+      95.0,
+      96.5,
+      97.0,
+      97.0
+    ],
+    "look_widths": [
+      117,
+      114,
+      113,
+      114,
+      114,
+      114,
+      115,
+      118,
+      114,
+      120,
+      114,
+      112,
+      116,
+      113,
+      114,
+      114
+    ],
+    "maximum_center_drift_pixels": 3.5,
+    "maximum_width_ratio": 1.0714285714285714
+  },
+  "errors": [],
+  "warnings": [
+    "look direction 067.5 accepted with a reviewed warning",
+    "look direction 157.5 accepted with a reviewed warning",
+    "look direction 225 accepted with a reviewed warning",
+    "look direction 337.5 accepted with a reviewed warning",
+    "000 has transparent interior hole rows (y=21, y=22, y=23, y=24, +6 more)",
+    "022.5 has transparent interior hole rows (y=34, y=35)",
+    "315 has transparent interior hole rows (y=26, y=27, y=28, y=29, +2 more)",
+    "337.5 has transparent interior hole rows (y=23, y=24, y=25, y=26, +5 more)",
+    "000->022.5 diff is a local outlier (1987 pixels vs neighbor average 1219)",
+    "157.5->180 diff is a local outlier (2109 pixels vs neighbor average 1158)"
+  ]
+}

@@ -1,0 +1,7 @@
+Create one clean full-body reference sprite for ChatGPT pet 小胡子.
+
+Pet identity: Reference-specific calico cat: rounded head and compact chubby whole body; lime-olive green eyes, warm ginger face and cheeks, broad white blaze forehead through nose bridge, black ear edges and black crown patches, asymmetrical black muzzle moustache heavier on viewer right with upright black spot beside nose, warm ginger muzzle patch on viewer left, large white chest and white paws, ginger and black back patches, calico tail. Soft plush-like stylized realistic mascot, friendly curious slightly goofy restful temperament. No clothing or props. Preserve asymmetry and fixed markings. Smooth continuous cyclic motion, gentle anticipation and follow-through, stable identity and frame scale. Supplied mood board is aesthetic reference only; no text, scenery or laptop..
+Style: Pet-safe sprite: compact full-body mascot, readable in a 192x208 cell, clear silhouette, simple face, stable palette/materials, and crisp edges for chroma-key extraction. Style `plush`: Soft plush toy mascot with rounded stitched forms, fuzzy fabric feel, simple sewn details, and readable toy-like proportions.
+
+
+Place a single centered pose on a perfectly flat pure blue #0000FF chroma-key background. Keep the full pet visible, compact, readable at 192x208, and easy to animate. Preserve approved reference identity cues. No scenery, text, borders, checkerboard transparency, shadows, glows, detached effects, or extra props. Keep #0000FF and close colors out of the pet, props, highlights, and effects.

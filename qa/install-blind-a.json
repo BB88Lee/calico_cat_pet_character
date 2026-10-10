@@ -1,0 +1,88 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-right",
+      "B": "ambiguous",
+      "reason": "A's nose and muzzle project to screen-right of the head center, with the far eye compressed toward the muzzle. B has a centered nose between similarly exposed eyes and a raised chin; its clear cue is upward pitch, without a clear horizontal turn."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's muzzle projects right and the eye on screen-right is foreshortened. B's nose projects left of the crown and the eye on screen-left is more compressed than the eye on screen-right."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's nose points left, showing more of the cheek and eye on screen-right. B's nose points right, showing more of the cheek and eye on screen-left. Both turns are visible in the facial outline."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A has a right-facing muzzle profile and a large near eye on screen-left. B has a left-facing muzzle profile and a large near eye on screen-right."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's nose sits right of the forehead center and the screen-right eye is compressed. B's nose sits left of the forehead center and the screen-left eye is compressed."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "Despite the downward pitch, A's muzzle points left and the near eye is on screen-right. B's muzzle points right and the near eye is on screen-left."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-left",
+      "B": "ambiguous",
+      "reason": "A's bowed face still has a left-projecting nose and a compressed far eye on screen-left. B's nose and forehead center align between both eyes; it reads as a downward, approximately frontal face without a clear left or right turn."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down",
+      "reason": "A raises its nose and chin, exposes the underside of the muzzle, and directs both eyes upward. B exposes the top plane of the crown, lowers the eyes and nose, and tucks the chin toward the chest."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "up",
+      "B": "down",
+      "reason": "A's eyes look above the muzzle and its chin lifts away from the chest. B has a broad visible crown and a low nose below lowered eyes, with a tucked chin."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "down",
+      "B": "up",
+      "reason": "A shows the top of its head, lowers the eye line, and angles the nose toward the chest. B lifts its muzzle, looks above the nose, and exposes more chin and throat beneath the jaw."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "down",
+      "B": "up",
+      "reason": "A has a slight downward pitch: the visible crown sits above lowered eyes, the muzzle slopes down, and the chin approaches the chest. B raises the eye line and nose and opens the space under its lifted chin."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "up",
+      "B": "down",
+      "reason": "A's centered nose tilts upward with the underside of the muzzle and chin visible. B bows its head, exposing the crown while its eyes and nose point toward the chest."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "down",
+      "B": "up",
+      "reason": "A has a large visible top plane of the crown, a low muzzle, and a tucked chin. B raises its nose and eye line and shows the underside of the jaw above the throat."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "down",
+      "B": "up",
+      "reason": "A's left-facing head has a slight downward pitch, with the crown exposed, the nose sloping below the eye line, and the chin close to the chest. B lifts the left-facing muzzle and eyes, with more underside of the chin visible."
+    }
+  ]
+}

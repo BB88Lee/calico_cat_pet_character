@@ -1,0 +1,88 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-right",
+      "B": "ambiguous",
+      "reason": "A's nose and muzzle point right of the head center and its eyes favor the right. B's nose lies between two similarly visible eyes and its raised face reads centered, with no clear horizontal turn."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's nose projects toward the right edge of its face. B's nose and muzzle sit left of its head center, with the eyes also directed left."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A has a left-projecting nose and leftward eye direction; B has a right-projecting nose and rightward eye direction. Both heads visibly turn toward their respective sides."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's muzzle projects to the right beyond the near eye. B's muzzle projects to the left beyond the near eye, with the opposite eye less exposed."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's lowered nose remains right of the eye pair and head center. B's nose projects left, and its near eye and cheek establish a leftward head turn."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's downward-tilted muzzle sits toward the left cheek and its eyes follow left. B's muzzle and eye direction favor the right cheek."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-left",
+      "B": "ambiguous",
+      "reason": "A's nose and muzzle project left beneath its lowered eye line. B shows a nearly symmetric front-facing eye pair with its nose centered between them, so a horizontal direction is unclear."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down",
+      "reason": "A exposes the underside of the raised chin, with nose lifted toward the eyes and little crown visible. B exposes much more crown and has its nose and chin lowered beneath the eye line."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "up",
+      "B": "down",
+      "reason": "A's eyes aim above horizontal and its chin is lifted. B's eyes aim downward, the crown is prominent, and the nose points toward the chest."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "down",
+      "B": "up",
+      "reason": "A has a visible top plane of the head and a lowered nose beneath downward-looking eyes. B lifts its muzzle and chin, and its eyes look above the head's forward direction."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "down",
+      "B": "up",
+      "reason": "A's nose points slightly downward beneath the eyes and its crown remains visible. B's eyes aim upward, its nose is raised, and the lower chin is more exposed."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "up",
+      "B": "down",
+      "reason": "A raises its nose with an exposed chin underside and upward-looking eyes. B tips the crown toward the viewer and lowers its muzzle toward the upper chest."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "down",
+      "B": "up",
+      "reason": "A's lowered eye line and muzzle accompany a clearly visible crown. B's eye direction rises, its muzzle tilts up, and the chin extends upward away from the chest."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "down",
+      "B": "up",
+      "reason": "A's leftward muzzle is angled slightly downward with the top of the head exposed and the eyes directed low. B's leftward muzzle is lifted, its eyes aim higher, and the chin underside is visible."
+    }
+  ]
+}

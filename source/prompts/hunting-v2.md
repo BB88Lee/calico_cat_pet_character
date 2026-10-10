@@ -1,0 +1,16 @@
+Use case: stylized-concept. Create ONE coherent animation strip, EXACTLY EIGHT complete separated copies of the SAME cat in one horizontal row, strict temporal order left to right. Wide canvas about 3:1. Genuine transparent background.
+Image roles: 1 canonical cat locks identity, face and soft natural fur style; 2 original photos and mood board locks black asymmetric muzzle and calico markings (ignore scenery and text); 3 approved existing sprites locks character continuity; 4 invisible 8-slot guide is spacing only, never draw guides; 5 first hunting attempt is motion reference ONLY, improve its weak rump wiggle and focused eyes.
+Cat identity: round compact calico, ginger crown and cheeks, broad white central forehead blaze, olive-green eyes with large dilated black pupils, black ear rims, recognizable uneven black moustache with larger viewer-right black muzzle patch and upright black spot beside nose, ginger opposite muzzle, white chest and paws, ginger-black flank patches. Match canonical round face. Same head/body size, markings, lighting and furry material throughout.
+Fixed front three-quarter camera: cat targets screen-right, but its big focused eyes and both eyes remain clear to the viewer. Cat starts very low to the floor, forepaws far forward, chin just above paws. Tail held curved LOW behind the rump toward screen-left, not sticking straight up over the back. Large wide-open eyes: intense alert hunting stare, natural cat irises/pupils, never replacement cartoon eyes.
+CRITICAL MOTION: for frames 0,1,2,3,4,7 the FACE and BOTH FRONT PAWS stay planted in exactly the same relative position inside each invisible slot. Only the HIPS and HINDLEGS visibly sway side to side, bending the spine; do not move the entire cat sideways. Make rump position differences obvious. Keep true scale constant, do not enlarge the crouched poses.
+Eight poses:
+0 belly/chest nearly on ground, forepaws firmly forward, very wide eyes stare right, hindquarters centered, tail low behind.
+1 anchored head/forepaws, rear shifted toward viewer and screen-left, one bent hindleg visibly tucked, pelvis swung left, tail follows.
+2 same anchored head/forepaws, rear swung away toward screen-right, opposite hindleg tuck, clear right rump wiggle, tail follows.
+3 another strong left rear sway, hips slightly lifted while shoulders stay low, toe-ready anticipation.
+4 rear returns center, both hindlegs compressed and ready to spring, head and forepaws still at same anchor.
+5 explosive forward pounce toward screen-right, body extended horizontally and airborne, BOTH attached front legs reach right, hindlegs straighten back left, full tail follows; eyes still locked. Entire silhouette safely fits this slot with padding.
+6 both front paws land forward near right side, hindquarters descend and hindlegs follow, body settles low.
+7 returns to the starting prone crouch matching frame 0.
+Every silhouette complete, ears/tail/paws/whiskers inside its invisible slot, generous transparent gaps so no copies touch. All limbs attached to one body. Background fully transparent. No floor or shadow.
+Avoid: copied guide pixels, text, labels, numbers, borders, grid, room, plants, window, props, prey, speed lines, blur, dust, stars, motion marks, extra limbs, clipped or merged cats. ONLY the eight poses on transparency.

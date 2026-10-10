@@ -1,0 +1,181 @@
+{
+  "name": "卓别林",
+  "description": "一只圆润的三花猫，带着黄绿色眼睛和独特的黑色小胡子，陪你想、做、完成。",
+  "character_notes": "Reference-specific calico cat: rounded head and compact chubby whole body; lime-olive green eyes, warm ginger face and cheeks, broad white blaze forehead through nose bridge, black ear edges and black crown patches, asymmetrical black muzzle moustache heavier on viewer right with upright black spot beside nose, warm ginger muzzle patch on viewer left, large white chest and white paws, ginger and black back patches, calico tail. Soft plush-like stylized realistic mascot, friendly curious slightly goofy restful temperament. No clothing or props. Preserve asymmetry and fixed markings. Smooth continuous cyclic motion, gentle anticipation and follow-through, stable identity and frame scale. Supplied mood board is aesthetic reference only; no text, scenery or laptop.",
+  "style": "plush",
+  "sprite_version": 2,
+  "atlas": {
+    "columns": 8,
+    "rows": 11,
+    "cell_width": 192,
+    "cell_height": 208,
+    "width": 1536,
+    "height": 2288
+  },
+  "chroma_key": {
+    "hex": "#0000FF",
+    "rgb": [
+      0,
+      0,
+      255
+    ],
+    "name": "blue",
+    "selection": "auto",
+    "score": 214.41
+  },
+  "removed_actions": [
+    "等你回应",
+    "抬爪打招呼"
+  ],
+  "actions": [
+    {
+      "state": "idle",
+      "name": "眨眼与呼吸",
+      "frames": 6,
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "custom_semantics": false
+    },
+    {
+      "state": "running-right",
+      "name": "向右小跑",
+      "frames": 8,
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "custom_semantics": false
+    },
+    {
+      "state": "running-left",
+      "name": "向左小跑",
+      "frames": 8,
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "custom_semantics": false
+    },
+    {
+      "state": "waving",
+      "name": "头朝下躺地，露肚皮撒娇",
+      "frames": 4,
+      "source_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "custom_semantics": true
+    },
+    {
+      "state": "jumping",
+      "name": "起跳与落地",
+      "frames": 5,
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "custom_semantics": false
+    },
+    {
+      "state": "failed",
+      "name": "趴低扭屁股，蓄力猛扑",
+      "frames": 8,
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "custom_semantics": true
+    },
+    {
+      "state": "waiting",
+      "name": "肚子后腿贴柱，把身体往上扽",
+      "frames": 6,
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "custom_semantics": true
+    },
+    {
+      "state": "running",
+      "name": "认真思考",
+      "frames": 6,
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "custom_semantics": false
+    },
+    {
+      "state": "review",
+      "name": "五子棋盘背影，轻轻动耳朵",
+      "frames": 6,
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "custom_semantics": true
+    }
+  ],
+  "look_directions": [
+    "000",
+    "022.5",
+    "045",
+    "067.5",
+    "090",
+    "112.5",
+    "135",
+    "157.5",
+    "180",
+    "202.5",
+    "225",
+    "247.5",
+    "270",
+    "292.5",
+    "315",
+    "337.5"
+  ],
+  "final_file": "outputs/zhuobielin-pet.png",
+  "sha256": "60e94b9b6c8412e5f0b24a7d94feed228ed19de62041a7a7f34fee490ca562a6"
+}

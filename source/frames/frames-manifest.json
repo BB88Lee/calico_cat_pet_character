@@ -1,0 +1,218 @@
+{
+  "ok": true,
+  "chroma_key": {
+    "hex": "#0000FF",
+    "rgb": [
+      0,
+      0,
+      255
+    ],
+    "threshold": 96
+  },
+  "rows": [
+    {
+      "state": "idle",
+      "frames": [
+        "source/frames/idle/00.png",
+        "source/frames/idle/01.png",
+        "source/frames/idle/02.png",
+        "source/frames/idle/03.png",
+        "source/frames/idle/04.png",
+        "source/frames/idle/05.png"
+      ],
+      "method": "components",
+      "user_action": "眨眼与呼吸",
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "user_semantics_override": false
+    },
+    {
+      "state": "running-right",
+      "frames": [
+        "source/frames/running-right/00.png",
+        "source/frames/running-right/01.png",
+        "source/frames/running-right/02.png",
+        "source/frames/running-right/03.png",
+        "source/frames/running-right/04.png",
+        "source/frames/running-right/05.png",
+        "source/frames/running-right/06.png",
+        "source/frames/running-right/07.png"
+      ],
+      "method": "components",
+      "user_action": "向右小跑",
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "user_semantics_override": false
+    },
+    {
+      "state": "running-left",
+      "frames": [
+        "source/frames/running-left/00.png",
+        "source/frames/running-left/01.png",
+        "source/frames/running-left/02.png",
+        "source/frames/running-left/03.png",
+        "source/frames/running-left/04.png",
+        "source/frames/running-left/05.png",
+        "source/frames/running-left/06.png",
+        "source/frames/running-left/07.png"
+      ],
+      "method": "components",
+      "user_action": "向左小跑",
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "user_semantics_override": false
+    },
+    {
+      "state": "waving",
+      "frames": [
+        "source/frames/waving/00.png",
+        "source/frames/waving/01.png",
+        "source/frames/waving/02.png",
+        "source/frames/waving/03.png"
+      ],
+      "method": "components",
+      "user_action": "头朝下躺地，露肚皮撒娇",
+      "source_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "user_semantics_override": true
+    },
+    {
+      "state": "jumping",
+      "frames": [
+        "source/frames/jumping/00.png",
+        "source/frames/jumping/01.png",
+        "source/frames/jumping/02.png",
+        "source/frames/jumping/03.png",
+        "source/frames/jumping/04.png"
+      ],
+      "method": "components",
+      "user_action": "起跳与落地",
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "user_semantics_override": false
+    },
+    {
+      "state": "failed",
+      "frames": [
+        "source/frames/failed/00.png",
+        "source/frames/failed/01.png",
+        "source/frames/failed/02.png",
+        "source/frames/failed/03.png",
+        "source/frames/failed/04.png",
+        "source/frames/failed/05.png",
+        "source/frames/failed/06.png",
+        "source/frames/failed/07.png"
+      ],
+      "method": "components",
+      "user_action": "趴低扭屁股，蓄力猛扑",
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "user_semantics_override": true
+    },
+    {
+      "state": "waiting",
+      "frames": [
+        "source/frames/waiting/00.png",
+        "source/frames/waiting/01.png",
+        "source/frames/waiting/02.png",
+        "source/frames/waiting/03.png",
+        "source/frames/waiting/04.png",
+        "source/frames/waiting/05.png"
+      ],
+      "method": "components",
+      "user_action": "肚子后腿贴柱，把身体往上扽",
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "user_semantics_override": true
+    },
+    {
+      "state": "running",
+      "frames": [
+        "source/frames/running/00.png",
+        "source/frames/running/01.png",
+        "source/frames/running/02.png",
+        "source/frames/running/03.png",
+        "source/frames/running/04.png",
+        "source/frames/running/05.png"
+      ],
+      "method": "components",
+      "user_action": "认真思考",
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "user_semantics_override": false
+    },
+    {
+      "state": "review",
+      "frames": [
+        "source/frames/review/00.png",
+        "source/frames/review/01.png",
+        "source/frames/review/02.png",
+        "source/frames/review/03.png",
+        "source/frames/review/04.png",
+        "source/frames/review/05.png"
+      ],
+      "method": "components",
+      "user_action": "五子棋盘背影，轻轻动耳朵",
+      "source_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "user_semantics_override": true
+    }
+  ]
+}
